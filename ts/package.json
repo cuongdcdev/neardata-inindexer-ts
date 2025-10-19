@@ -1,0 +1,23 @@
+{
+  "name": "inindexer-ts",
+  "version": "0.1.0",
+  "description": "TypeScript port of inindexer (NEAR indexing orchestrator)",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "dev": "ts-node --esm src/index.ts",
+    "example:download": "ts-node --esm examples/download.ts",
+    "example:ft": "ts-node --esm examples/ft_transfers.ts",
+    "example:watch": "ts-node --esm examples/watch_the_slime.ts",
+    "example:watch-bet": "ts-node --esm examples/watch_bet.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
